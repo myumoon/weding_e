@@ -6,6 +6,6 @@ $(function(){
 	var imgIdx = 0;
 	setInterval(function(){
 		imgIdx = (imgIdx + 1) % 6;
-		$('img').attr('src', '../resources/img/0' + (imgIdx + 1) + '.png');
+		$('img').attr('src', 'resources/img/0' + (imgIdx + 1) + '.png');
 	},1000);
 });
