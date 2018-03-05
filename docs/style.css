@@ -13,3 +13,16 @@ body {
 	width: 1px;
 	height: 1px;
 }
+
+#button_start {
+	background-color: #fffacd;
+	color: #db7093;
+	
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	height: 80px;
+	margin: auto;
+};
