@@ -3,6 +3,17 @@ body {
 	background-color: #ff7f50;
 }
 
+#container {
+	display: none;
+}
+
+#loading{
+	position:absolute;
+	left:50%;
+	top:20%;
+	margin-left:-30px;
+}
+
 .image img {
 	width: 100%;
 	display: none;

@@ -5,6 +5,7 @@ $(function(){
 var bgm = document.getElementById("overSound");
 var bttonClicked = false;
 
+// 再生ボタン
 $("#button_start").click(function(e) {
 	$("#main_image").css("display", "inline");
 	$(this).css("display", "none");
@@ -22,6 +23,7 @@ $("#button_start").click(function(e) {
 	},1000);
 });
 
+// タブ切り替え時に音を止める
 document.addEventListener('visibilitychange', function() {
 	if(document.visibilityState === 'hidden') {
 		if(bttonClicked === true) {
@@ -33,3 +35,11 @@ document.addEventListener('visibilitychange', function() {
 		}
 	}
 }, false);
+
+// ウインドウロード時にローディングアイコンを消して画面を出す
+window.onload = function(){
+	$(function() {
+		$("#loading").fadeOut();
+		$("#container").fadeIn();
+	});
+}

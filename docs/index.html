@@ -16,25 +16,30 @@
 </head>
 <body>
 
-<input type="button" value="ここを押してね！！ (音がなるよ♪)" id="button_start">
+<!-- ローディングアイコン -->
+<div id="loading"><img src="resources/img/loading.gif"></div>
 
-<div class="image">
-	<img src="resources/img/01.jpg" id="main_image" />
+<div id="container">
+	<input type="button" value="ここを押してね！！ (音がなるよ♪)" id="button_start">
+
+	<div class="image">
+		<img src="resources/img/01.jpg" id="main_image" />
+	</div>
+
+	<!-- 読み込まれててほしいので置いてみる（効果があるかは不明） -->
+	<div class="undisplay">
+		<img src="resources/img/02.jpg" />
+		<img src="resources/img/03.jpg" />
+		<img src="resources/img/04.jpg" />
+		<img src="resources/img/05.jpg" />
+		<img src="resources/img/06.jpg" />
+	</div>
+
+	<audio id="overSound" preload="auto" loop>
+		<source src="resources/sound/BGM.mp3" type="audio/mp3">
+	</audio>
+
 </div>
-
-<!-- 読み込まれててほしいので置いてみる（効果があるかは不明） -->
-<div class="undisplay">
-	<img src="resources/img/02.jpg" />
-	<img src="resources/img/03.jpg" />
-	<img src="resources/img/04.jpg" />
-	<img src="resources/img/05.jpg" />
-	<img src="resources/img/06.jpg" />
-</div>
-
-<audio id="overSound" preload="auto" loop>
-	<source src="resources/sound/BGM.mp3" type="audio/mp3">
-</audio>
-
 
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script type="text/javascript" src="scripts/main.js"></script>
