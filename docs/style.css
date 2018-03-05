@@ -7,3 +7,9 @@ body {
 	width: 100%;
 	display: none;
 }
+
+.undisplay img {
+	visibility: hidden;
+	width: 1px;
+	height: 1px;
+}
